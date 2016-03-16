@@ -1,0 +1,674 @@
+/*
+Theme Name: BlankSlate
+Theme URI: http://wordpress.org/themes/blankslate
+Author: TidyThemes
+Author URI: http://tidythemes.com/
+Description: <strong>UPDATE</strong> - 4.0+ is here, completely overhauled, yet again. As always, <a href="http://tidythemes.com/concept/#upgrading">use caution when upgrading</a> (tidythemes.com/concept/#upgrading) and <a href="http://tidythemes.com/concept/">learn the TidyThemes concept</a> (tidythemes.com/concept). &nbsp; &rarr; <em><strong>CAUTION</strong>: If you're child theming or have clients that are child theming on top of BlankSlate (not the recommended use), please do not blindly upgrade to newer versions.</em> &nbsp; &rarr; <strong>DESCRIPTION</strong>: BlankSlate is the definitive WordPress HTML5 boilerplate starter theme. We've carefully constructed the most clean and minimalist theme available anywhere for designers/developers to use as a base/foundation to build websites for clients or to build completely custom themes from scratch to release faster. Clean, semi-minified, unformatted and valid code, SEO-friendly, no programmer comments, standardized and as white label as possible and most importantly, CSS reset for cross-browser-compatability and no intrusive visual CSS styles added whatsoever. A perfect skeleton theme that blows any others like it (the subsequent underscores.me for example) completely out of the water, as they're simply too overcomplicated for what people really want in this kind of theme. Now comes with jQuery enqueued and ready to go. &nbsp; &rarr; <strong>SUPPORT</strong>: Please use the <a href="http://tidythemes.com/forum/">official support forum</a> (tidythemes.com/forum). Comments and suggestions for improving BlankSlate, please see "<a href="http://tidythemes.com/tidythemes-sucks/">TidyThemes Sucks!</a>" (tidythemes.com/tidythemes-sucks). Just getting started? <a href="http://tidythemes.com/want-to-learn-css/">Want to learn CSS?</a> (tidythemes.com/want-to-learn-css) &nbsp; &rarr; <strong>WHAT'S NEW?</strong>: We stripped down as much custom, extraneous, superfluous junk code as we could and greatly improved the HTML5 structure. <a href="http://make.wordpress.org/themes/author/chipbennett/">Chip Bennett</a> (make.wordpress.org/themes/author/chipbennett), a highly experienced programmer and official WordPress administrator, worked closely with us to audit the theme code for quality. <a href="http://themes.trac.wordpress.org/changeset?old_path=/blankslate/3.3&new_path=/blankslate/4.0">See</a> (themes.trac.wordpress.org/changeset?old_path=/blankslate/3.3&new_path=/blankslate/4.0) just how much we've revamped things. Last, but not least, BlankSlate has now been <a href="https://github.com/tidythemes/blankslate">opened up on GitHub</a> (github.com/tidythemes/blankslate) if anyone would like to make suggested code additions/improvements. Thank you for using BlankSlate.
+Version: 4.0.3
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: black, blue, white, light, one-column, fluid-layout, responsive-layout, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
+Text Domain: blankslate
+
+BlankSlate WordPress Theme © 2011-2015 TidyThemes
+BlankSlate is distributed under the terms of the GNU GPL
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.clear{clear:both}
+.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}.screen-reader-text{clip:rect(1px, 1px, 1px, 1px);position:absolute !important}
+body,td,th {
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #424242;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(../images/bg2.gif);
+	text-align: left;
+}
+#all {
+	background-image: url(../images/cont_bg.gif);
+	background-repeat: repeat-y;
+	background-position: left top;
+	margin: auto;
+	width: 960px;
+	text-align: left;
+}
+#head p {
+	float: right;
+	clear: right;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 80px;
+	padding-right: 20px;
+}
+#head p a {
+	font-size: 11px;
+	font-weight: bold;
+	color: #716e61;
+	text-decoration: none;
+}
+#head p a:hover {
+	
+	text-decoration: underline ;
+}
+#head {
+	height: 223px;
+	background-image: url(../images/bg_top2.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#head img.logo {
+	margin-left: 57px;
+	position: absolute;
+}
+#head h1 {
+	font-size: 11px;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+	width: 315px;
+	margin-left: 20px;
+	margin-top: 70px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	color: #a8a7a7;
+	position: absolute;
+	letter-spacing: 0.11em;
+}
+
+#head h2 {
+	font-size: 11px;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+	width: 315px;
+	margin-left: 20px;
+	margin-top: 40px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	color: #ae180d;
+	position: absolute;
+	letter-spacing: 0.11em;
+}
+#head ul {
+	padding: 0px;
+	float: right;
+	margin-top: 21px;
+	margin-right: 20px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	
+}
+#head ul li {
+	display: inline;
+	list-style-type: none;
+	text-align: center;
+	height: 55px;
+	line-height: 55px;
+	float: left;
+	width: 145px;
+	background-image: url(../images/tlibg2.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+#head ul li a {
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+#head ul li a:hover {
+	
+	text-decoration: underline ;
+	
+}
+img.phone {
+	top: 80px;
+	margin-left: 731px;
+	position: absolute;
+}
+#content {
+	background-image: url(../images/bg_bot2.jpg);
+	background-repeat: no-repeat;
+	background-position:  top left;
+	padding-right: 40px;
+	padding-left: 10px;
+	*height:100%;
+}
+#right {
+	float: right;
+	width: 540px;
+}
+#right h2 {
+	font-size: 13px;
+	color: #c80101;
+	background-image: url(../images/h2bg.gif);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	float: right;
+	padding-bottom: 13px;
+	text-transform: uppercase;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+}
+#right h3 {
+	font-size: 12px;
+	color: #5C8501;
+	background-image: url(../images/top_bullet3.gif);
+	background-repeat: no-repeat;
+	background-position: left 2px;
+	padding-left: 20px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+
+#right p {
+	clear: both;
+	margin: 0px;
+	padding-bottom: 15px;
+}
+#right ul {
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+#right .bb {
+	background-image: url(../images/bot _bg3.jpg);
+	background-repeat: no-repeat;
+	height: 97px;
+	border: 1px solid #d6d3c9;
+	background-position: left top;
+	voice-family: "\"}\"";
+  	voice-family:inherit;
+	height: 95px;
+}
+#right .bb {
+	
+}
+#right .bb img {
+	position: absolute;
+}
+
+#right .bb h3 {
+	color: #4f7801;
+	margin: 0px;
+	padding: 10px;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: right;
+	background-image: none;
+}
+#right .bb p {
+	font-size: 11px;
+	clear: none;
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 130px;
+}
+#right .bb a {
+	background-image: url(../images/top_bullet.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+	float: right;
+	padding-right: 14px;
+	margin-right: 10px;
+	font-size: 11px;
+	color: #424242;
+	text-decoration: underline;
+}
+#right ul  li {
+	background-image: url(../images/top_bullet.gif);
+	background-repeat: no-repeat;
+	background-position: left 8px;
+	padding-left: 20px;
+	list-style-type: none;
+	padding-top: 5px;
+}
+
+
+#right ul.price {
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+
+#right ul.price  li {
+	background-image: url(../images/top_bullet2.gif);
+	background-repeat: no-repeat;
+	background-position: left 8px;
+	padding-left: 20px;
+	list-style-type: none;
+	padding-top: 5px;
+}
+
+#right a {
+	color: #005c9e;
+	text-decoration: underline;
+}
+#right a:hover {
+	
+	text-decoration: none;
+}
+#right div.banner_l {
+	background-image: url(../images/lbimg.jpg);
+	background-repeat: repeat-x;
+	float: left;
+	height: 167px;
+	width: 260px;
+	border: 1px solid #d7d5cc;
+	background-position: left bottom;
+}
+#right div.banner_l img {
+	position: absolute;
+}
+
+#right div.banner_l h3 {
+	font-size: 12px;
+	color: #005c9e;
+	text-transform: uppercase;
+	text-align: right;
+	margin: 0px;
+	padding: 12px;
+	background-image: none;
+}
+#right div.banner_l p {
+	font-size: 11px;
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 130px;
+}
+#right div.banner_l a {
+
+	background-image: url(../images/lbull.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+	float: right;
+	padding-right: 12px;
+	margin-right: 10px;
+	font-size: 11px;
+	color: #424242;
+	text-decoration: underline;
+}
+/**/
+#right div.banner_r {
+	background-image: url(../images/rbimg.jpg);
+	background-repeat: repeat-x;
+	float: right;
+	height: 167px;
+	width: 260px;
+	border: 1px solid #d7d5cc;
+	background-position: left bottom;
+	margin-bottom: 20px;
+}
+#right div.banner_r img {
+	position: absolute;
+}
+
+#right div.banner_r h3 {
+	font-size: 12px;
+	color: #c80101;
+	text-transform: uppercase;
+	text-align: right;
+	margin: 0px;
+	padding: 12px;
+	background-image: none;
+}
+#right div.banner_r p {
+	font-size: 11px;
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 130px;
+}
+#right div.banner_r a {
+	background-image: url(../images/rbull.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+	float: right;
+	padding-right: 12px;
+	margin-right: 10px;
+	font-size: 11px;
+	color: #424242;
+	text-decoration: underline;
+}
+#left {
+	float: left;
+	width: 325px;
+	padding-top: 110px;
+}
+#left ul {
+	width: 300px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	background-image: url(../images/lulbg.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	voice-family: "\"}\"";
+  	voice-family:inherit;
+	width: 270px;
+}
+#left ul {
+	
+}
+#left ul  li {
+	list-style-type: none;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #858484;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	margin: 0px;
+	clear:left;
+	
+}
+#left ul  li {
+	
+}
+#left ul li a {
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #716e61;
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;	
+}
+#left ul li a span { background-image: url(../images/li.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding: 10px 28px 0px 0px;
+	float:left;
+		voice-family: "\"}\"";
+  	voice-family:inherit;
+	padding: 10px 44px 0px 0px;
+	}
+#left ul li a span { 
+	}	
+
+#left ul li a.sel {
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #C80101;
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;	
+}
+#left ul li a.sel span { background-image: url(../images/li_sel.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding: 10px 28px 0px 0px;
+	float:left;
+		voice-family: "\"}\"";
+  	voice-family:inherit;
+	padding: 10px 44px 0px 0px;
+	}
+#left ul li a.sel span { 
+	}	
+	
+#left ul li a:hover {
+	color: #C80101;
+	text-decoration: none;
+	
+}
+#left ul li a:hover span{
+	background-image: url(../images/li_sel.gif)
+	
+}
+
+#left .news_out {
+	background-image: url(../images/newstop.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-top: 30px;
+}
+#left .news_in {
+	background-image: url(../images/newsbot.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	padding-bottom: 35px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+#left .news_in h3 {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #5c8501;
+	margin: 0px;
+	padding-top: 8px;
+	padding-right: 0px;
+	padding-bottom: 12px;
+	padding-left: 17px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #c4c1b3;
+}
+#left .news_in p {
+	font-size: 11px;
+	margin: 0px;
+	padding-top: 13px;
+	padding-right: 17px;
+	padding-bottom: 15px;
+	padding-left: 17px;
+}
+#left .news_in div {
+	height: 30px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #C4C1B3;
+}
+#left .news_in b {
+	color: #5C8501;
+}
+#left .news_in a {
+	background-image: url(../images/news_bullet.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+	float: right;
+	padding-right: 21px;
+	font-size: 11px;
+	color: #005c9e;
+}
+#left .news_in a:hover {
+	text-decoration: none;	
+}
+#footer {
+	background-image: url(../images/footer_bg2.gif);
+	background-repeat: no-repeat;
+	margin: auto;
+	height: 170px;
+	width: 960px;
+	text-align: right;
+}
+#footer p {
+	margin: 0px;
+	padding-top: 50px;
+	padding-right: 40px;
+	float: right;
+}
+#footer p a {
+	color: #005C9E;
+	font-size: 12px;
+}
+#footer p a:hover {
+	
+	text-decoration: none;
+}
+#footer div {
+	float: left;
+	padding-top: 40px;
+	padding-left: 20px;
+	text-align: left;
+}
+#footer p.gs {
+	margin-top: 30px;
+	float: none;
+	padding: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#footer a.gst {
+	margin-top: -25px;
+}
+#footer .gs a.t {
+	position: absolute;
+	margin-top: 23px;
+	margin-left: 48px;
+	color: #FFFFFF;
+	font-size: 11px;
+	text-decoration: none;
+}
+#footer .gs a.t:hover {
+	
+	text-decoration: underline;
+}
+.img_box {
+	border: 1px solid #ceccc6;
+	text-align: center;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	margin-bottom: 20px;
+}
+.img_box img {
+	margin: 10px;
+}
+.table {
+	margin: 0px;
+	width: 100%;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 11px;
+	padding-left: 0px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #ceccc6;
+}
+.table th {
+	padding: 8px;
+	color: #5C8501;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #D4D2D2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D4D2D2;
+	text-align: center;
+	border-left: none;
+	background-color: #f1f0ee;
+	white-space: nowrap;
+}
+.table td {
+	padding: 8px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #D4D2D2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D4D2D2;
+	border-left: none;
+	vertical-align: top;
+	font-size: 11px;
+}
+
+.t_bot {
+	background-image: url(../images/h2bg.gif);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	margin: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 12px;
+	padding-left: 0px;
+}
+div.tbot {
+	background-image: url(../images/h2bg.gif);
+	background-repeat: repeat-x;
+	padding: 0px;
+
+	*padding: 0px 0px 10px 0px;
+	border: none;
+	background-position: left bottom;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+.orderform {
+	margin: 0px;
+	padding: 0px;
+}
+.orderform table {
+	margin: 0px;
+	padding: 0px;
+}
+.orderform table th {
+	text-align: left;
+	width: 160px;
+	
+}
+
+.orderform table td input{
+	font-size: 11px;
+	width: 265px;
+	
+}
+.orderform table td input.but {
+	width: auto;	
+	
+}
+.orderform table td textarea {
+	float:left;
+	width: 265px;
+	height:80px;
+	font-size: 11px;
+	
+}
+.orderform table td b {
+	color: #CC0000;	
+	
+}
+.orderform table th i {
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;	
+}
+.orderform table td, th {
+	padding-bottom: 8px;
+	vertical-align: top;
+}
+.mini {
+	font-size: 11px;
+}
